@@ -26,6 +26,9 @@ gem 'jbuilder', '~> 2.7'
 # Authentification
 gem 'devise', '~> 4.8'
 
+# Bills and payments
+gem 'money-rails', '~> 1.13'
+
 # File uploading and processing
 gem 'image_processing', '~> 1.2'
 gem 'cloudinary', '~> 1.12.0'
