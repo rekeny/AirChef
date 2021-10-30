@@ -1,0 +1,32 @@
+PreCommit:
+  BundleAudit:
+    enabled: true
+    on_warn: fail
+
+  BundleCheck:
+    enabled: true
+    on_warn: fail
+
+  Brakeman:
+    enabled: true
+    on_warn: fail
+
+  RuboCop:
+    enabled: true
+    on_warn: fail
+
+  ForbiddenBranches:
+    enabled: false
+
+  TrailingWhitespace:
+    enabled: true
+    exclude:
+      - '**/*.svg'
+      - '**/*.md'
+
+PostCheckout:
+  ALL:
+    quiet: true
+
+  IndexTags:
+    enabled: true
